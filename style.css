@@ -112,19 +112,22 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.logo:hover{
+    animation: animate__heartBeat;
+}
+
+.logo__link{
     color: var(--colorBlanco);
     font-size: 35px;
     font-weight: 600;
     font-family: var(--logo);
 }
-.navbar .logo a span{
+.logo__span{
     color: var(--colorOro);
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
-    color: var(--colorBlanco);
-}
+
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -171,12 +174,12 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .scroll-up-btn.show{
-    bottom: 30px;
+    bottom: 50px;
     opacity: 1;
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    filter: brightness(10%);
 }
 
 
@@ -499,7 +502,7 @@ svg.feather {
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "They work with me";
 }
 .teams .carousel .card{
     background: #222;
