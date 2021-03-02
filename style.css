@@ -112,10 +112,10 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
+
 .logo:hover{
     animation: animate__heartBeat;
 }
-
 .logo__link{
     color: var(--colorBlanco);
     font-size: 35px;
