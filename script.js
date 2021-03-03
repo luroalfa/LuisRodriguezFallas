@@ -1,11 +1,12 @@
 $(document).ready(function () {
+    // ?We play with the scroll of the windows
     $(window).scroll(function () {
-        // sticky navbar on scroll script
+        // ?We style the navigator bar with the scroll
         if (this.scrollY > 30) {
-            $('.navbar').addClass("sticky");
+            $('.navbar').addClass("navbar__sticky");
             console.log(scrollY);
         } else {
-            $('.navbar').removeClass("sticky");
+            $('.navbar').removeClass("navbar__sticky");
         }
 
         // scroll-up button show/hide script
@@ -34,7 +35,7 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // ?typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Web Develoment", "Design", "Automation"],
         typeSpeed: 100,
@@ -70,6 +71,7 @@ $(document).ready(function () {
             }
         }
     });
+
 });
 
 
