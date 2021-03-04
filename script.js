@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     // ?typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Web Develoment", "Design", "Automation"],
+        strings: ["Web Develoment.", "Design.", "Automation."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -78,8 +78,6 @@ $(document).ready(function () {
 
 
 
-
-// // ////////////////////////////
 // MODAL
 
 let cerrar = document.querySelectorAll(".close-p")[0];

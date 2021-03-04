@@ -27,15 +27,128 @@ body{
 }
 /*=========================================================all similar content styling codes========================================================= */
 section{
+    /* border: yellow solid; */
     padding: 100px 0;
 }
-
-
-
-
-
-
-
+/* -- Navbar -- */
+/* -- Default style of the navigator bar -- */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 25px 0;
+    font-family: 'Ubuntu', sans-serif; 
+    transition: all 0.3s ease;
+    border-bottom: solid 1px var(--colorOro);
+}
+/* -- We work this class in javascript -- */
+.navbar__sticky{
+    padding: 15px 0;
+    background: var(--colorAzulOscuro);
+}
+.navbar__max-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar__a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 25px;
+    transition: color 0.3s ease;
+    
+}
+.navbar__a:hover{
+    color: var(--colorOro);
+}
+/* -- Block logo -- */
+.logo{
+    margin-right: 25px;
+    /* border: red solid ; */
+}
+.logo:hover{
+    animation: animate__heartBeat;
+}
+.logo__link{
+    color: var(--colorBlanco);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: var(--logo);
+}
+.logo__span{
+    color: var(--colorOro);
+    /* transition: all 0.3s ease; */
+}
+/* home section styling */
+.home{
+    display: block;
+    background: url("images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home__stack{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+.home__max-width{
+    /* border: yellow solid; */
+    margin: 100px 0px 50px 100px;
+}
+.home-content{
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.8);
+    border-radius: 15%;
+    padding: 30px;
+}
+.home__text-1{
+    font-size: 1rem;
+}
+.home__text-2{
+    color: var(--colorOro);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: -3px;
+    font-family: var(--logo);
+}
+.home__text-3{
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.home__text-3--span{
+    color: var(--colorOro);
+    font-weight: 500;
+}
+.home__text-4{
+    margin: 5px 0;
+}
+/* BUTTON */
+.button{
+    display: inline-block;
+    background: var(--colorFire);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 5rem;
+    border: 2px solid var(--colorFire);
+    transition: all 0.3s ease;
+}
+.button:hover{
+    color: var(--colorFire);
+    background: none;
+}
 
 
 
@@ -58,37 +171,6 @@ section{
     background: var(--colorBlanco);
 }
 /*TODO =========================================================custom scroll bar========================================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*TODO ===========================================================================================================================================================================*/
 .max-width{
@@ -141,88 +223,7 @@ section .title::after{
 }
 /*TODO ===========================================================================================================================================================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -- Default style of the navigator bar -- */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 25px 0;
-    font-family: 'Ubuntu', sans-serif; 
-    transition: all 0.3s ease;
-    border-bottom: solid 1px var(--colorOro);
-}
-/* -- We work this class in javascript -- */
-.navbar__sticky{
-    padding: 15px 0;
-    background: var(--colorAzulOscuro);
-}
-.navbar__max-width{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar__li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar__a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 25px;
-    transition: color 0.3s ease;
-    
-}
-.navbar__a:hover{
-    color: var(--colorOro);
-}
-/* -- Block logo ready -- */
-.logo{
-    margin-right: 25px;
-    /* border: red solid ; */
-}
-.logo:hover{
-    animation: animate__heartBeat;
-}
-.logo__link{
-    color: var(--colorBlanco);
-    font-size: 35px;
-    font-weight: 600;
-    font-family: var(--logo);
-}
-.logo__span{
-    color: var(--colorOro);
-    /* transition: all 0.3s ease; */
-}
-
-/* =========================================================TODO========================================================= */
-
-
+/*TODO =========================================================TODO========================================================= */
 /* menu btn styling */
 .menu-btn{
     color: rgb(173, 187, 49);
@@ -257,69 +258,83 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(10%);
 }
+/*TODO =========================================================TODO========================================================= */
 
 
 
-/* home section styling */
-.home{
-    display: flex;
-    background: url("images/banner.jpg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-}
-.home .max-width{
-    margin: auto 0 auto 30px;
-}
-.home .home-content{
-    width: 70%;
-    background-color: rgba(29, 29, 29, 0.8);
-    border-radius: 15%;
-    padding: 30px;
-}
-.home .home-content .text-1{
-    font-size: 1rem;
-}
-.home .home-content .text-2{
-    color: var(--colorOro);
-    font-size: 3rem;
-    font-weight: 600;
-    margin-left: -3px;
-    font-family: var(--logo);
-}
-.home .home-content .text-3{
-    color: var(--colorBlanco);
-    font-size: 2rem;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: var(--colorOro);
-    font-weight: 500;
-}
-.home .home-content h4{
-    font-size: 1rem;
-    margin: 5px 0;
-}
-/* BUTTON */
-.home .home-content a{
-    display: inline-block;
-    background: var(--colorFire);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 5rem;
-    border: 2px solid var(--colorFire);
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: var(--colorFire);
-    background: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO voy por aca */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* BARRA-SOCIAL-MEDIA */
 .bar-social {
