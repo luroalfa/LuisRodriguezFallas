@@ -1,7 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-/*? =========================================================General=========================================================*/
+/*=========================================================General=========================================================*/
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +25,24 @@ body{
     --logo:'Cinzel Decorative', cursive;
     --textos:'Cabin', sans-serif;
 }
+/*=========================================================all similar content styling codes========================================================= */
+section{
+    padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*TODO =========================================================custom scroll bar========================================================= */
 ::-webkit-scrollbar {
@@ -39,11 +57,38 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--colorBlanco);
 }
+/*TODO =========================================================custom scroll bar========================================================= */
 
-/*? =========================================================all similar content styling codes========================================================= */
-section{
-    padding: 100px 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*TODO ===========================================================================================================================================================================*/
 .max-width{
@@ -94,8 +139,33 @@ section .title::after{
     background: var(--backgroudPageDark);
     transform: translateX(-50%);
 }
+/*TODO ===========================================================================================================================================================================*/
 
-/*? =========================================================Default style of the navigator bar========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Default style of the navigator bar -- */
 .navbar{
     position: fixed;
     width: 100%;
@@ -105,45 +175,37 @@ section .title::after{
     transition: all 0.3s ease;
     border-bottom: solid 1px var(--colorOro);
 }
-/*? =========================================================We work this class in javascript========================================================= */
+/* -- We work this class in javascript -- */
 .navbar__sticky{
     padding: 15px 0;
     background: var(--colorAzulOscuro);
 }
-
 .navbar__max-width{
-    /* border: solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* TODO  =========================================================it must be modulated --> BEM=========================================================*/
-.navbar .menu li{
+.navbar__li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar__a{
     display: block;
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
+    font-weight: 600;
+    margin: 0 25px;
     transition: color 0.3s ease;
+    
 }
-.navbar .menu li a:hover{
+.navbar__a:hover{
     color: var(--colorOro);
 }
-.navbar.sticky .menu li a:hover{
-    color: var(--colorOro);
-}
-
-
-/*? =========================================================Block logo ready========================================================= */
+/* -- Block logo ready -- */
 .logo{
     margin-right: 25px;
     /* border: red solid ; */
 }
-
 .logo:hover{
     animation: animate__heartBeat;
 }
@@ -155,7 +217,7 @@ section .title::after{
 }
 .logo__span{
     color: var(--colorOro);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
 /* =========================================================TODO========================================================= */
@@ -800,7 +862,7 @@ footer span a:hover{
 
 
 
-
+/* TODO REVISAR LOS MEDIA QUERY */
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width{
