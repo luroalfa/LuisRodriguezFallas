@@ -111,13 +111,13 @@ section .title::after{
     background: var(--colorAzulOscuro);
 }
 
-
-/* TODO  =========================================================it must be modulated --> BEM=========================================================*/
-.navbar .max-width{
+.navbar__max-width{
+    /* border: solid red; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
+/* TODO  =========================================================it must be modulated --> BEM=========================================================*/
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -139,6 +139,11 @@ section .title::after{
 
 
 /*? =========================================================Block logo ready========================================================= */
+.logo{
+    margin-right: 25px;
+    /* border: red solid ; */
+}
+
 .logo:hover{
     animation: animate__heartBeat;
 }
