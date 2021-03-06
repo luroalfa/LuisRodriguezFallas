@@ -35,9 +35,9 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    // ?typing text animation script
+    // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Web Develoment.", "Design.", "Automation."],
+        strings: ["Web Development.", "Design.", "Automation."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
