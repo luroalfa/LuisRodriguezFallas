@@ -88,7 +88,7 @@ section{
 /* home section styling */
 .home{
     display: block;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner6.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -131,6 +131,20 @@ section{
 }
 .home__text-4{
     margin: 5px 0;
+}
+
+.home__photo{
+    border-radius: 100%;
+    width: 70%;
+    border: var(--backgroudPageDark) solid 10px;
+}
+.home__section-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home__container-photo{
+    text-align: center;
 }
 /* BUTTON */
 .button{
