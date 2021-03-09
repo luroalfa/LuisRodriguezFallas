@@ -18,6 +18,7 @@ body{
 	--backgroudPage: #021227;
     --backgroudPageDark: #1B1B1B;
     --colorAzulOscuro: #010716;
+	--colorOrolight: #efb71091;
 	--colorOro: #efb810;
 	--colorFire: #FC481B;
     --colorBlanco: #EAE1D0;
@@ -134,16 +135,15 @@ section{
 .home__text-4{
     margin: 5px 0;
 }
-
 .home__photo{
     border-radius: 100%;
     width: 70%;
     border: solid 10px;
     border-style: double;
-    border-top-color: var(--colorAzulOscuro);
-    border-left-color: var(--backgroudPageDark);
-    border-right-color: var(--backgroudPageDark);
-    border-bottom-color: var(--colorAzulOscuro);
+    border-top-color: var(--colorOrolight);
+    border-left-color: var(--colorOrolight);
+    border-right-color: var(--colorOrolight);
+    border-bottom-color: var(--colorOrolight);
 }
 .home__section-photo{
     display: flex;
@@ -287,76 +287,6 @@ section .title::after{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*TODO voy por aca */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* BARRA-SOCIAL-MEDIA */
 .bar-social {
     width: 40px;
@@ -412,7 +342,6 @@ section .title::after{
     cursor: pointer;
     transition: .5s;
 }
-
 .ulsocial::after {
     content: "";
     display: block;
