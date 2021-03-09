@@ -21,6 +21,7 @@ body{
 	--colorOro: #efb810;
 	--colorFire: #FC481B;
     --colorBlanco: #EAE1D0;
+    --black: #111;
     --colorRojo: #680303;
     --logo:'Cinzel Decorative', cursive;
     --textos:'Cabin', sans-serif;
@@ -479,9 +480,9 @@ svg.feather {
 
 
 /* services section styling */
-.services, .skills{
+.skills{
     color:#fff;
-    background: #111;
+    background: var(--black);
 }
 .services .title::before,
 .teams .title::before{
