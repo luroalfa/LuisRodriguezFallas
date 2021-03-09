@@ -4,7 +4,6 @@ $(document).ready(function () {
         // ?We style the navigator bar with the scroll
         if (this.scrollY > 30) {
             $('.navbar').addClass("navbar__sticky");
-            console.log(scrollY);
         } else {
             $('.navbar').removeClass("navbar__sticky");
         }
