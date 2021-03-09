@@ -391,7 +391,12 @@ section .title::after{
     transition: .5s;
 }
 .ulsocial__li:hover::before{
+    filter: blur(3px);
     transform: scale(1.2);
+    box-shadow: 0 0 15px yellow;
+}
+.ulsocial__li:hover{
+    color: yellow;
 }
 .ulsocial__li{
     position: relative;
