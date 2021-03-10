@@ -53,35 +53,4 @@ $(document).ready(function () {
     });
 
 
-
-
-
-    // MODAL
-
-    let cerrar = document.querySelectorAll(".close-p")[0];
-    let abrir = document.querySelectorAll(".openModal")[0];
-    let modal = document.querySelectorAll(".modal")[0];
-    let modalC = document.querySelectorAll(".modal-container")[0];
-
-
-    abrir.addEventListener('click', (e) => {
-        e.preventDefault();
-        modalC.style.opacity = '1';
-        modalC.style.visibility = 'visible';
-        modal.classList.toggle('modal-close');
-    });
-
-    cerrar.addEventListener('click', () => {
-        modalC.style.opacity = '0';
-        modalC.style.visibility = 'hidden';
-        modal.classList.toggle('modal-close');
-    });
-
-    window.addEventListener('click', (e) => {
-        if (e.target == modalC) {
-            modalC.style.opacity = '0';
-            modalC.style.visibility = 'hidden';
-            modal.classList.toggle('modal-close');
-
-        }
-    });
+}
