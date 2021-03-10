@@ -34,6 +34,9 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
+
+
+
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Web Development.", "Design.", "Automation."],
@@ -49,60 +52,36 @@ $(document).ready(function () {
         loop: true
     });
 
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
+
+
+
+
+    // MODAL
+
+    let cerrar = document.querySelectorAll(".close-p")[0];
+    let abrir = document.querySelectorAll(".openModal")[0];
+    let modal = document.querySelectorAll(".modal")[0];
+    let modalC = document.querySelectorAll(".modal-container")[0];
+
+
+    abrir.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalC.style.opacity = '1';
+        modalC.style.visibility = 'visible';
+        modal.classList.toggle('modal-close');
     });
 
-});
-
-
-
-
-
-// MODAL
-
-let cerrar = document.querySelectorAll(".close-p")[0];
-let abrir = document.querySelectorAll(".openModal")[0];
-let modal = document.querySelectorAll(".modal")[0];
-let modalC = document.querySelectorAll(".modal-container")[0];
-
-
-abrir.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalC.style.opacity = '1';
-    modalC.style.visibility = 'visible';
-    modal.classList.toggle('modal-close');
-});
-
-cerrar.addEventListener('click', () => {
-    modalC.style.opacity = '0';
-    modalC.style.visibility = 'hidden';
-    modal.classList.toggle('modal-close');
-});
-
-window.addEventListener('click', (e) => {
-    if (e.target == modalC) {
+    cerrar.addEventListener('click', () => {
         modalC.style.opacity = '0';
         modalC.style.visibility = 'hidden';
         modal.classList.toggle('modal-close');
+    });
 
-    }
-});
+    window.addEventListener('click', (e) => {
+        if (e.target == modalC) {
+            modalC.style.opacity = '0';
+            modalC.style.visibility = 'hidden';
+            modal.classList.toggle('modal-close');
+
+        }
+    });
